@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 15px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left img {
+  width: 100px;
+  margin-left: 15px;
+}
+
+.header i {
+  padding: 0 7px;
+  cursor: pointer;
+  color: rgb(96, 96, 96);
+}
+
+.header__search form {
+  display: flex;
+  height: 35px;
+  border: 1px solid #ddd;
+}
+
+.header__search input {
+  width: 500px;
+  max-width: 100%;
+  padding: 10px;
+  border: none;
+  height: 100%;
+}
+
+.header__search button {
+  height: 100%;
+  padding: 0;
+  border: none;
+}
+
+.material-icons {
+  color: rgb(96, 96, 96);
+}
+
+.mainBody {
+  display: flex;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  width: 230px;
+  background-color: white;
+  overflow-y: auto;
+  position: sticky;
+}
+
+.sidebar__categories {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.sidebar__category {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.sidebar__category span {
+  margin-left: 15px;
+}
+
+.sidebar__category:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.videos {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.videos__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.video {
+  width: 310px;
+  margin-bottom: 30px;
+}
+
+.video__thumbnail {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.video__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.video__details {
+  display: flex;
+  margin-top: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h3 {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(3, 3, 3);
+  margin-bottom: 6px;
+}
+
+.title a, .title span {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 20px;
+  color: rgb(3, 3, 3);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .header__search,
+  .header__icons .material-icons,
+  .sidebar {
+    display: none;
+  }
+
+  .header__icons .display-this {
+    display: inline;
+  }
+}
+
+@media (max-width: 941px) {
+  .header__search input {
+    width: 300px;
+  }
+}
+
