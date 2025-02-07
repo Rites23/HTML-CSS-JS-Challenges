@@ -23,3 +23,6 @@ CSS (Flexbox, Media Queries)
 JavaScript (DOM Manipulation, Event Handling)
 
 🚀 A great beginner-friendly project showcasing basic web interactivity!
+
+![image](https://github.com/user-attachments/assets/45fccb69-7c52-4dc0-9d53-788ed0a32517)
+
