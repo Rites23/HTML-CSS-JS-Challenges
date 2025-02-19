@@ -1,0 +1,58 @@
+/* INSTRUCTIONS
+ *
+ * 1) Limit the total width of
+ *    the .intro-content to about half
+ *    of its parent
+ *
+ * 2) Stop the text from overflowing
+ *    out the bottom at small screen
+ *    widths
+ *
+ * You may modify the HTML if needed
+ *
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  
+
+}
+
+header {
+  background-color: #23424a;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.col {
+  width: 50%;
+  
+}
+
+h1, p {
+  margin-bottom: 10px;
+  
+}
+
+section {
+  padding: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.col2 {
+  width: 80%;
+  
+}
+
