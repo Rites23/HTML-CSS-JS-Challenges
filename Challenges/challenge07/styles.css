@@ -1,0 +1,162 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.6;
+    color: #222C2A;
+}
+
+.container {
+    width: 90%;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.hero {
+    background-color: #F3EED9;
+    color: #824936;
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #222C2A;
+}
+
+.hero__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section--light {
+    background-color: #fff;
+    color: #824936;
+}
+
+.section--dark {
+    background-color: #222C2A;
+    color: #F3EED9;
+}
+
+.section--brown {
+    background-color: #824936;
+    color: #F3EED9;
+}
+
+.section__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.custom-font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: #222C2A;
+}
+
+.section--dark p,
+.section--brown p {
+    color: #ffffff;
+    font-size: 21px; 
+    line-height: 1.6;
+}
+
+.section--dark .section__title {
+    text-align: left;
+    margin-left: 0;
+}
+
+.section--brown .section__title {
+    text-align: left;
+    margin-left: 0;
+}
+
+.flex-row {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.col p {
+    margin-bottom: 1.5rem;
+}
+
+.section__img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.section__img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    .reverse {
+        flex-direction: column;
+    }
+    
+    .hero__title {
+        font-size: 42px;
+    }
+    
+    .section__title {
+        font-size: 30px;
+    }
+    
+    .col {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .container {
+        padding: 2rem 0;
+    }
+    
+    .section__img {
+        margin-top: 2rem;
+    }
+}
